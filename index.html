@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+
+        <script src="./bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+
+        <link rel="stylesheet" href="./dd.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <div>
+            <!-- <div id="disp"></div> -->
+            
+            <form class="d-flex container" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            
+        </div>
+        <div  class="border mx-3 d-flex justify-content-between d-none d-md-flex d-lg-flex btn">
+            <button class="fw-bold btn-outline-danger btn-lg fs-5 btn">
+                All categories
+            </button>
+            <button class="fw-bold btn-outline-danger btn-lg fs-5 btn">
+                Computers & Accessories
+            </button>
+            <button class="fw-bold btn-outline-danger btn-lg fs-5 btn">
+                Phone and Tablelet
+            </button>
+            <button class="fw-bold btn-outline-danger btn-lg fs-5 btn">
+                Eletronics
+            </button>
+            <button class="fw-bold btn-outline-danger btn-lg fs-5 btn">
+                King Fashion
+            </button>
+            <button class="fw-bold btn-outline-danger btn-lg fs-5 btn">
+                Home kitchen
+            </button>
+            <button class="fw-bold btn-outline-danger btn-lg fs-5 btn">
+                Other categories
+            </button>
+        </div>
+        <div class="d-flex mx-3 ">
+            <div class="col-md-8 col-12 mt-4">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="1000">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1678697701/contentservice/Cwkk.jpg_HysyrP3kh.jpg" class="d-block w-100 img-fluid" alt="carousel images" >
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1677664213/contentservice/verve.jpg_SyT0yj2Ci.jpg" class="d-block w-100 img-fluid" alt="carousel images" >
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1678697701/contentservice/inteli.jpg_H13yHP3yh.jpg" class="d-block w-100 img-fluid" alt="carousel images" >
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1678695622/contentservice/going.jpg_B1Ap3U3Jn.jpg" class="d-block w-100 img-fluid" alt="carousel images" >
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1679299203/contentservice/Power.jpg_rycFf9Blh.jpg" class="d-block w-100 img-fluid" alt="carousel images" >
+                      </div>
+                      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-danger rounded-5 " aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button> -->
+                    </div>
+                  </div>
+            </div>
+            <div class="border col-4 ps-2 d-flex d-none d-md-flex">
+                <div>
+                    <div class="d-flex">
+                        <a href="" class="m-1">
+                            <div><img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1678088055/contentservice/pow.jpg_SyyYvzXy3.jpg" alt="" width="" class="card img-fluid" ></div>
+                        </a>
+                        <a href="" class="m-1">
+                            <div><img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1678100543/contentservice/Access.jpg_H1VrdBXyn.jpg" alt="" width="" class="card img-fluid"></div>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <a href="" class="m-1">
+                            <div><img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1678698637/contentservice/Book.jpg_HJ4cuw2k3.jpg" alt="" width="" class="card img-fluid"></div>
+                        </a>
+                        <a href="" class="m-1">
+                            <div><img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1677746007/contentservice/IntelBox.jpg_r1pUyyAAs.jpg" alt="" width="" class="card img-fluid"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="border border-info col">
+                    <a href="">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1677746007/contentservice/IntelBox.jpg_r1pUyyAAs.jpg" alt="" class="my-4 card rounded-5" width="55">
+                    </a>
+                    <a href="">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1677746007/contentservice/IntelBox.jpg_r1pUyyAAs.jpg" alt="" class="my-4 card rounded-5" width="55">
+                    </a>
+                    <a href="">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1677746007/contentservice/IntelBox.jpg_r1pUyyAAs.jpg" alt="" class="my-4 card rounded-5" width="55">
+                    </a>
+                    <a href="">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1677746007/contentservice/IntelBox.jpg_r1pUyyAAs.jpg" alt="" class="my-4 card rounded-5" width="55">
+                    </a>
+                </div> -->
+            </div>
+        </div>
+        
+        
+
+        
+        <div>
+            <div class="d-flex">
+                <button class="btn btn-outline-danger w-100 m-2 fs-2 fw-bold" onclick="home()">Home</button>
+                <button class="btn btn-outline-danger w-100 m-2 fs-2 fw-bold" onclick="cartt()">Cart</button>
+            </div>
+            <marquee behavior="" direction="" class="fs-1 my-3 bg-danger fw-bold text-light text-capitalize">welcome to King Online Shopping in Nigeria - Best Shopping Site </marquee>
+        </div>
+        <div class="justify-content-between  flex-wrap  mx-3 shadow card">
+            <div class="row mx-3">
+                <div class="col-md-4 col-12 col-sm-6 py-1">
+                    <div class="mx-1 card" id="hover">
+                        <div class="d-inline d-lg-flex rounded justify-content-between p-2 ">
+                            <div class="py-3 text-center">
+                                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg" alt="" class="img-fluid" width="100" id="images" >
+                            </div>
+                            <div class="px-3">
+                                <p><span id="names">Lumigon T3-4.8-128GB ROM</span> </p>
+                                <p><span class="fw-bold" id="prices"> ₦9,000 </span><span>₦13,000</span></p>
+                                <div class="text-success fw-bold">
+                                    You save  ₦25,000
+                                </div>
+                                <button class="btn fw-bold btn-outline-danger float-end" onclick="addtocart({image:'https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg',name:'Lumigon T3-4.8-128GB ROM',price:'₦25,000'})">Add to cart</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4 col-12 col-sm-6 py-1">
+                    <div class="mx-1 card" id="hover">
+                        <div class="d-inline d-lg-flex rounded justify-content-between p-2 ">
+                            <div class="py-3 text-center">
+                                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg" alt="" class="img-fluid" width="100" id="images" >
+                            </div>
+                            <div class="px-3">
+                                <p><span id="names">Lumigon T3-4.8-128GB ROM</span> </p>
+                                <p><span class="fw-bold" id="prices"> ₦9,000 </span><span>₦13,000</span></p>
+                                <div class="text-success fw-bold">
+                                    You save  ₦25,000
+                                </div>
+                                <button class="btn fw-bold btn-outline-danger float-end" onclick="addtocart({image:'https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg',name:'Lumigon T3-4.8-128GB ROM',price:'₦25,000'})">Add to cart</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4 col-12 col-sm-6 py-1">
+                    <div class="mx-1 card" id="hover">
+                        <div class="d-inline d-lg-flex rounded justify-content-between p-2 ">
+                            <div class="py-3 text-center">
+                                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg" alt="" class="img-fluid" width="100" id="images" >
+                            </div>
+                            <div class="px-3">
+                                <p><span id="names">Lumigon T3-4.8-128GB ROM</span> </p>
+                                <p><span class="fw-bold" id="prices"> ₦9,000 </span><span>₦13,000</span></p>
+                                <div class="text-success fw-bold">
+                                    You save  ₦25,000
+                                </div>
+                                <button class="btn fw-bold btn-outline-danger float-end" onclick="addtocart({image:'https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg',name:'Lumigon T3-4.8-128GB ROM',price:'₦25,000'})">Add to cart</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4 col-12 col-sm-6 py-1">
+                    <div class="mx-1 card" id="hover">
+                        <div class="d-inline d-lg-flex rounded justify-content-between p-2 ">
+                            <div class="py-3 text-center">
+                                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg" alt="" class="img-fluid" width="100" id="images" >
+                            </div>
+                            <div class="px-3">
+                                <p><span id="names">Lumigon T3-4.8-128GB ROM</span> </p>
+                                <p><span class="fw-bold" id="prices"> ₦9,000 </span><span>₦13,000</span></p>
+                                <div class="text-success fw-bold">
+                                    You save  ₦25,000
+                                </div>
+                                <button class="btn fw-bold btn-outline-danger float-end" onclick="addtocart({image:'https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg',name:'Lumigon T3-4.8-128GB ROM',price:'₦25,000'})">Add to cart</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4 col-12 col-sm-6 py-1">
+                    <div class="mx-1 card" id="hover">
+                        <div class="d-inline d-lg-flex rounded justify-content-between p-2 ">
+                            <div class="py-3 text-center">
+                                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg" alt="" class="img-fluid" width="100" id="images" >
+                            </div>
+                            <div class="px-3">
+                                <p><span id="names">Lumigon T3-4.8-128GB ROM</span> </p>
+                                <p><span class="fw-bold" id="prices"> ₦9,000 </span><span>₦13,000</span></p>
+                                <div class="text-success fw-bold">
+                                    You save  ₦25,000
+                                </div>
+                                <button class="btn fw-bold btn-outline-danger float-end" onclick="addtocart({image:'https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg',name:'Lumigon T3-4.8-128GB ROM',price:'₦25,000'})">Add to cart</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4 col-12 col-sm-6 py-1">
+                    <div class="mx-1 card" id="hover">
+                        <div class="d-inline d-lg-flex rounded justify-content-between p-2 ">
+                            <div class="py-3 text-center">
+                                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg" alt="" class="img-fluid" width="100" id="images" >
+                            </div>
+                            <div class="px-3">
+                                <p><span id="names">Lumigon T3-4.8-128GB ROM</span> </p>
+                                <p><span class="fw-bold" id="prices"> ₦9,000 </span><span>₦13,000</span></p>
+                                <div class="text-success fw-bold">
+                                    You save  ₦25,000
+                                </div>
+                                <button class="btn fw-bold btn-outline-danger float-end" onclick="addtocart({image:'https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg',name:'Lumigon T3-4.8-128GB ROM',price:'₦25,000'})">Add to cart</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4 col-12 col-sm-6 py-1">
+                    <div class="mx-1 card" id="hover">
+                        <div class="d-inline d-lg-flex rounded justify-content-between p-2 ">
+                            <div class="py-3 text-center">
+                                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg" alt="" class="img-fluid" width="100" id="images" >
+                            </div>
+                            <div class="px-3">
+                                <p><span id="names">Lumigon T3-4.8-128GB ROM</span> </p>
+                                <p><span class="fw-bold" id="prices"> ₦9,000 </span><span>₦13,000</span></p>
+                                <div class="text-success fw-bold">
+                                    You save  ₦25,000
+                                </div>
+                                <button class="btn fw-bold btn-outline-danger float-end" onclick="addtocart({image:'https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg',name:'Lumigon T3-4.8-128GB ROM',price:'₦25,000'})">Add to cart</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4 col-12 col-sm-6 py-1">
+                    <div class="mx-1 card" id="hover">
+                        <div class="d-inline d-lg-flex rounded justify-content-between p-2 ">
+                            <div class="py-3 text-center">
+                                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg" alt="" class="img-fluid" width="100" id="images" >
+                            </div>
+                            <div class="px-3">
+                                <p><span id="names">Lumigon T3-4.8-128GB ROM</span> </p>
+                                <p><span class="fw-bold" id="prices"> ₦9,000 </span><span>₦13,000</span></p>
+                                <div class="text-success fw-bold">
+                                    You save  ₦25,000
+                                </div>
+                                <button class="btn fw-bold btn-outline-danger float-end" onclick="addtocart({image:'https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/D/C/211319_1673340713.jpg',name:'Lumigon T3-4.8-128GB ROM',price:'₦25,000'})">Add to cart</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <section class="my-4 shadow card " style="overflow-x: scroll;">
+            <div class="d-flex ">
+                <div class="text-decoration-none text-dark col-5 col-md-3 col-lg-2 card " id="hover">
+                        <div class=" py-2 text-center">
+                            <img src="https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/accessories_220x220.png" alt="" class="img-fluid" width="130" id="images">
+                        </div>
+                        <div class="px-3 border text-center">
+                            <p class="text-center" id="names">Mobile Accessories</p>
+                            <p><span class="fw-bold" id="prices"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                            <div class="text-success fw-bold">
+                                You save  ₦25,000
+                            </div>
+                            <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/accessories_220x220.png',name:'Mobile Accessories',price:' ₦9,000'})">Add to cart</button>
+                        </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/portable-power_220x220.png" alt="" width="130" id="images" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center" id="names">portable power</p>
+                        <p><span class="fw-bold" id="prices"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/portable-power_220x220.png',name:'portable power',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/phones_220x220.png" alt="" width="130" id="images" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center" id="names">Phone & Tablets</p>
+                        <p><span class="fw-bold" id="prices"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/phones_220x220.pngg',name:'Phone & Tablets',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/cms/0-1-weekly-cps/0-2023/01-thumbnails/refreigerator.jpg" alt="" width="130" id="image" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center" id="name">Refreigerators</p>
+                        <p><span class="fw-bold" id="price"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/cms/0-1-weekly-cps/0-2023/01-thumbnails/refreigerator.jpg',name:'Refreigerators',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/electronics_220x220.png" alt="" width="130" id="image" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center">Eletronics</p>
+                        <p><span class="fw-bold"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/electronics_220x220.png',name:'Eletronics',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/cms/0-1-homepage/0-0-thumbnails/v2/exclusive-deals_220x220v2.png" alt="" width="130" id="image" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center">Wrist watch</p>
+                        <p><span class="fw-bold"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/cms/0-1-homepage/0-0-thumbnails/v2/exclusive-deals_220x220v2.png',name:'Wrist watch',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/89/762414/1.jpg?2533" alt="" width="130" id="image" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center">Eaget pen Flash Drive 3.0.</p>
+                        <p><span class="fw-bold"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/89/762414/1.jpg?2533',name:'Eaget pen Flash Drive',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/2698201/1.jpg?5628" alt="" width="130" id="image" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center">Iphone X 3GB RAM+64G...</p>
+                        <p><span class="fw-bold"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/2698201/1.jpg?5628',name:'Iphone X 3GB RAM+64G',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="card my-2 mx-3 shadow">
+            <div class="row">
+                <a href="" class="col-4 col-lg-2 border">
+                    <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1678695218/contentservice/Computing.jpg_BkFEiIhk2.jpg" alt="" class="img-fluid" >
+                </a>
+                <a href="" class="col-4 col-lg-2 border">
+                    <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1678695220/contentservice/Electronics.jpg_SkqVj8hk3.jpg" alt="" class="img-fluid" >
+                </a>
+                <a href="" class="col-4 col-lg-2 border">
+                    <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1678695216/contentservice/Power.jpg_rJ_ViL2kh.jpg" alt="" class="img-fluid" >
+                </a>
+                <a href="" class="col-4 col-lg-2 border">
+                    <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1678695221/contentservice/Groceries.jpg_SJiNs8hkh.jpg" alt="" class="img-fluid" >
+                </a>
+                <a href="" class="col-4 col-lg-2 border">
+                    <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1678695218/contentservice/Kitchen.jpg_HJtVsL3y3.jpg" alt="" class="img-fluid" >
+                </a>
+                <a href="" class="col-4 col-lg-2 border">
+                    <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1678695221/contentservice/Phones.jpg_H1qEjInyn.jpg" alt="" class="img-fluid" >
+                </a>
+            </div>
+        </section>
+        <section class=" container d-flex justify-content-between">
+                <h4>Recommended for you</h4>
+                <a href="" class="text-decoration-none p-1">
+                    <button class="btn-outline-info btn text-dark fw-bold">
+                        See All Items
+                    </button>
+                </a>
+        </section>
+        <section class="mx-3 border my-4 card">
+            <a href="">
+                <div>
+                    <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1676975350/contentservice/Clearwebmiddlestr.jpg_ByAe6GMAo.jpg" alt="" class="col-12" height="">
+                </div>
+            </a>
+        </section>
+        <section class="my-4 shadow card " style="overflow-x: scroll;">
+            <div class="d-flex ">
+                <div class="text-decoration-none text-dark col-5 col-md-3 col-lg-2 card " id="hover">
+                        <div class=" py-2 text-center">
+                            <img src="https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/accessories_220x220.png" alt="" class="img-fluid" width="130" id="images">
+                        </div>
+                        <div class="px-3 border text-center">
+                            <p class="text-center" id="names">Mobile Accessories</p>
+                            <p><span class="fw-bold" id="prices"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                            <div class="text-success fw-bold">
+                                You save  ₦25,000
+                            </div>
+                            <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/accessories_220x220.png',name:'Mobile Accessories',price:' ₦9,000'})">Add to cart</button>
+                        </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/portable-power_220x220.png" alt="" width="130" id="images" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center" id="names">portable power</p>
+                        <p><span class="fw-bold" id="prices"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/portable-power_220x220.png',name:'portable power',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/phones_220x220.png" alt="" width="130" id="images" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center" id="names">Phone & Tablets</p>
+                        <p><span class="fw-bold" id="prices"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/phones_220x220.pngg',name:'Phone & Tablets',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/cms/0-1-weekly-cps/0-2023/01-thumbnails/refreigerator.jpg" alt="" width="130" id="image" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center" id="name">Refreigerators</p>
+                        <p><span class="fw-bold" id="price"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/cms/0-1-weekly-cps/0-2023/01-thumbnails/refreigerator.jpg',name:'Refreigerators',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/electronics_220x220.png" alt="" width="130" id="image" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center">Eletronics</p>
+                        <p><span class="fw-bold"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/cms/0-1-christmas-sale/2022/thumbnails/electronics_220x220.png',name:'Eletronics',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/cms/0-1-homepage/0-0-thumbnails/v2/exclusive-deals_220x220v2.png" alt="" width="130" id="image" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center">Wrist watch</p>
+                        <p><span class="fw-bold"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/cms/0-1-homepage/0-0-thumbnails/v2/exclusive-deals_220x220v2.png',name:'Wrist watch',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/89/762414/1.jpg?2533" alt="" width="130" id="image" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center">Eaget pen Flash Drive 3.0.</p>
+                        <p><span class="fw-bold"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/89/762414/1.jpg?2533',name:'Eaget pen Flash Drive',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="text-decoration-none text-dark ms-1 col-5 col-md-3 col-lg-2 card " id="hover">
+                    <div class=" py-2 text-center">
+                        <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/2698201/1.jpg?5628" alt="" width="130" id="image" class="img-fluid">
+                    </div>
+                    <div class="p-1 text-center">
+                        <p class="text-center">Iphone X 3GB RAM+64G...</p>
+                        <p><span class="fw-bold"> ₦9,000 </span><span><del>₦13,000</del> </span></p>
+                        <div class="text-success fw-bold">
+                            You save  ₦25,000
+                        </div>
+                        <button class="btn fw-bold btn-outline-danger w-100 my-2" onclick="addtocart({image:'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/2698201/1.jpg?5628',name:'Iphone X 3GB RAM+64G',price:' ₦9,000'})">Add to cart</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="mx-3 my-3 border ">
+            <div class="row py-2">
+                <div class="col-6 col-md-3 col-lg-3 my-1">
+                    <div class="card">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1664913246/contentservice/furniture.jpg_Sk7P1z9Ms.jpg" alt="" class="img-fluid" >
+                        <div class="p-2 text-center">
+                            <h5 class="my-1">HOME FURNISHINGS</h5>
+                            <p>Get Up To 70% Off</p>
+                            <a href="" class="fw-bold text-dark">
+                                    Shop Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 my-1">
+                    <div class="card">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1664913248/contentservice/tvs.jpg_S1Ew1z9zi.jpg" alt="" class="img-fluid" >
+                        <div class="p-2 text-center">
+                            <h5>TOP DEALS ON TELEVISIONS</h5>
+                            <p>Get Up To 70% Off</p>
+                            <a href="" class="fw-bold text-dark">
+                                    Shop Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-3 my-1">
+                    <div class="card">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1664913250/contentservice/fitness.jpg_BJFwyf5Mo.jpg" alt="" class="img-fluid" >
+                        <div class="p-2 text-center">
+                            <h5 class="my-1">FITNESS TOOLS & EQUIPMENT</h5>
+                            <p>Get Up To 70% Off</p>
+                            <a href="" class="fw-bold text-dark">
+                                    Shop Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 my-1">
+                    <div class="card">
+                        <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1664913246/contentservice/furniture.jpg_Sk7P1z9Ms.jpg" alt="" class="img-fluid" >
+                        <div class="p-2 text-center">
+                            <h5 class="my-1">HOME Kitchen</h5>
+                            <p>Get Up To 70% Off</p>
+                            <a href="" class="fw-bold text-dark">
+                                    Shop Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mx-4 my-3">
+            <div class="row">
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1605874160/contentservice/hp.png_BJTuxM4r9w.png" alt="" class="col-lg-2 col-3 card" >
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1605874103/contentservice/itec.png_ry0n-NSqP.png" alt="" class="col-lg-2 col-3 card" >
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1624436320/contentservice/Intel.png_BySv0vehO.png" alt="" class="col-lg-2 col-3 card" >
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1677226673/contentservice/dgf.jpg_S1_nGl8Ao.jpg" alt="" class="col-lg-2 col-3 card" >
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1654253801/contentservice/tecs.png_HyZeKPw_c.png" alt="" class="col-lg-2 col-3 card" >
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1605874108/contentservice/uni.png_S10ET-Vrcv.png" alt="" class="col-lg-2 col-3 card" >
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1656326346/contentservice/philip.png_Bya6_WD9c.png" alt="" class="col-lg-2 col-3 card" >
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1605874087/contentservice/coke.png_H1khbVHcv.png" alt="" class="col-lg-2 col-3 card" >
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1674721128/contentservice/Huawei.jpg_ByJ_v2y3j.jpg" alt="" class="col-lg-2 col-3 card" >
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1621431873/contentservice/lenovo%20logo.png_rJIrIcMtO.png" alt="" class="col-lg-2 col-3 card" >
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1643360594/contentservice/brands.png_H1d8ZNbAK.png" alt="" class="col-lg-2 col-3 card" >
+                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1660565787/contentservice/vivo%20logo.png_HkMXthw05.png" alt="" class="col-lg-2 col-3 card" >
+            </div>
+        </div>
+        <!-- <div class="progress mx-3" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
+        </div> -->
+        <section class="mx-3 card my-4">
+            <div class="p-1">
+                <h5 class="fw-bold pt-3">
+                    King Online Shopping in Nigeria - Best Shopping Site
+                </h5>
+                <p>King.com is Nigeria’s number one online Shopping destination.We pride ourselves in having everything you could possibly need for life and living at the best prices than anywhere else. Our access to Original Equipment Manufacturers and premium sellers gives us a wide range of products at very low prices. Some of our popular categories include electronics, mobile phones, computers, fashion, beauty products, home and kitchen, Building and construction materials and a whole lot more from premium brands. Some of our other categories include Food and drinks, automotive and industrial, books, musical equipment, babies and kids items, sports and fitness, to mention a few. To make your shopping experience swift and memorable, there are also added services like gift vouchers, consumer promotion activities across different categories and bulk purchases with hassle-free delivery. Enjoy free shipping rates for certain products and with the bulk purchase option, you can enjoy low shipping rates, discounted prices and flexible payment. When you shop on our platform, you can pay with your debit card or via KongaPay, which is a convenient and secured payment solution. Get the best of lifestyle services online. Don't miss out on the biggest sales online which takes place on special dates yearly.</p>
+            </div>
+            <div></div>
+        </section>
+        <footer class="p-3 bg-dark">
+            <section class="d-flex justify-content-between">
+                <div>
+                    <!-- smmfwlek -->
+                </div>
+                <!-- <div>
+                    <fieldset class="bg-light d-flex ">
+                        <input type="email" placeholder="Email Address
+                        " class="form-control">
+                        <button class="btn bg-danger">Subscribe</button>
+                    </fieldset>
+                </div> -->
+            </section> 
+        </footer>
+        
+    </body>
+</html>
+

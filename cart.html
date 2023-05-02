@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./dd.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+</head>
+<body onload="cart()">
+    <div class="d-flex">
+        <div class="text-center fs-1 fw-bold float-end w-75 border ps-5">My Cart</div>
+        <div class="border w-25 px-4">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <div>
+        <marquee behavior="" direction="" class="fs-1 my-2 bg-danger fw-bold text-light text-capitalize">welcome to King Online Shopping in Nigeria - Best Shopping Site </marquee>
+    </div>
+    <div class="d-flex">
+        <button class="btn btn-outline-danger w-100 m-2 fs-2 fw-bold" onclick="home()">Home</button>
+        <button class="btn btn-outline-danger w-100 m-2 fs-2 fw-bold" onclick="cartt()">Cart</button>
+    </div>
+    <div class="fs-3 mx-3">Total Amount <span class="fw-bold" id="mytotal"></span></div>
+    <div  class="justify-content-between mx-4 shadow card row">
+        <div class="row" id="disp"></div>
+    </div>
+    
+</body>
+</html>
