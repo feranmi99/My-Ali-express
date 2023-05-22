@@ -1,40 +1,41 @@
-#hover:hover {
-    box-shadow: 1px 5px 3px #bebaba86;
-    transform: scale(1.1,1.1);
-}
-body{
+#btn {
+    box-shadow:1px 3px 9px gray ;
+  }
+  #btn:hover {
+   background-color:rgb(110, 228, 228);
+  }
+  #btn:active {
+   background-color: white;
+   /* transition: 2s; */;
+   transform: matrix3d(40px);
+  }
+  .hh {
+    font-size: 50px;
+    color: white;
+    text-transform: capitalize;
+  }
+  /* li {
+    list-style: none;
+  } */
+  body {
     background-color: whitesmoke;
-}
-.spinner {
-    width: 50px;
-    height: 50px;
-    display: grid;
-    color: #004dff;
-    background: radial-gradient(farthest-side, currentColor calc(100% - 7px),#0000 calc(100% - 6px) 0);
-    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 15px),#000 calc(100% - 13px));
-    border-radius: 50%;
-    animation: spinner-sm4bhi 2s infinite linear;
-    float: right;
-    cursor: pointer;
-    /* justify-content: ; */
-   }
-   
-   .spinner::before,
-   .spinner::after {
-    content: "";
-    grid-area: 1/1;
-    background: linear-gradient(currentColor 0 0) center,
-             linear-gradient(currentColor 0 0) center;
-    background-size: 100% 11px,11px 100%;
-    background-repeat: no-repeat;
-   }
-   
-   .spinner::after {
-    transform: rotate(45deg);
-   }
-   
-   @keyframes spinner-sm4bhi {
-    100% {
-     transform: rotate(1turn);
-    }
-   }
+  }
+  ::-webkit-scrollbar-thumb{
+    /* display: none; */
+    background-color: blue;
+    width: 0.3rem;
+    height: 0.3rem;
+  }
+  #scroolbar::-webkit-scrollbar{
+    display: none;
+    background-color: red;
+    width: 0.3rem;
+    height: 0.3rem;
+  }
+  #hover:hover {
+    transform: scale(1.1,1.1);
+    transition: 1s;
+  }
+  small {
+    opacity: 0.7;
+  }
