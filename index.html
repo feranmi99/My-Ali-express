@@ -13,23 +13,23 @@
         <script src="./script.js"></script>
     </head>
     <body onload="laoded()">
-        <div class="p-3 bg-light">
-
+        <div class="p-1 bg-light">
+            <div class="container-lg justify-content-between d-flex">
+                <button class="btn btn-danger ">log-out</button>
+                <button class="btn btn-primary ">User</button>
+            </div>
         </div>
-        <nav class="navbar sticky-top" style="background-color: white;">
-            <div class="container-lg border border-danger d-flex justify-content-between">
-                <a class="border d-sm-none d-md-block d-none d-sm-block" href="#"><img src="./Screenshot 2023-05-16 160437.jpg" alt="" class="img-fluid" width="130"></a>
-                <form class="d-flex w-50 border px-2" role="search">
-                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn fw-bold" style="background-color: orange;color: white;font-size: larger;"  type="submit">Search</button>
-                </form>
-                <div class="btn-group border gap-2" role="group" aria-label="Default button group">
-                    <button type="button" class="btn btn-warning fs-5 fw-bold " onclick="home()">Account</button>
-                    <button type="button" class="btn btn-warning fs-5 fw-bold text-light" onclick="cartt()">Cart 🛒<sup id="lenght"></sup></button>
-                </div>
+        <nav class="navbar sticky-top" style="background-color: white;border: 2px solid red;">
+            <div class="container-lg border border-danger d-flex px-2">
+                <a class="d-sm-none d-md-block d-none d-sm-block col-2 " href="#"><img src="./Screenshot 2023-05-16 160437.jpg" alt="" class="img-fluid" width=""></a>
+                <input class="form-control mx-2 col" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn fw- d-none d-lg-block col-1" style="background-color: orange;color: white;font-size: larger;"  type="submit">Search</button>
+                <div class="btn-group border gap-2 ms-2" role="group" aria-label="Default button group">
+                    <button type="button" class="btn btn-warning fs-5 fw-bold d-none d-lg-block text-light" onclick="home()">Home</button>
+                    <button type="button" class="btn btn-warning fs-5 fw-bold text-light " onclick="cartt()">Cart 🛒<sup id="lenght">0</sup></button>
+                </div>  
             </div>
         </nav>
-        
         <div class="d-flex justify-content-between container-lg border  border-danger ">
             <dl class="border border-info col-lg-2 me-2 rounded d-none d-lg-block " style="background-color: white;">
                 <dd>🍎 Supermarket</dd>
@@ -158,7 +158,7 @@
             </div>
         </section>
         <section class="my-4 container-lg shadow  card px-0 " style="overflow-x: scroll;" id="scroolbar">
-            <header class="px-3 py-3 ">
+            <header class="px-3 py-3 px-0">
                 <div class="fw-bold fs-5">
                     Top selling items
                 </div>
@@ -520,59 +520,59 @@
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Biore 2PCS UV Aqua Rich Watery Essence Sunscreen_yy.jp', name:'Mobile Accessories', price:10000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Biore 2PCS UV Aqua Rich Watery Essence Sunscreen_yy.jpg', name:'Biore 2PCS UV Aqua Rich Watery Essence Sunscreen', price:10000})">
                         <div class=" py-2 text-center">
                             <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Biore 2PCS UV Aqua Rich Watery Essence Sunscreen_yy.jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Biore Aqua Rich Watery Sunscreen</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Biore 2PCS UV Aqua Rich Watery Essence Sunscreen_yy.jp', name:'Mobile Accessories', price:10000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Denim Jacket Korean Casual Jacket Youth Trend Hoode.jpg', name:'Denim Jacket Korean Casual Jacket Youth Trend Hoode', price:10000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Biore 2PCS UV Aqua Rich Watery Essence Sunscreen_yy.jp" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Denim Jacket Korean Casual Jacket Youth Trend Hoode.jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessoriesh</div>
+                        <div class="ps-2" >Jacket Youth Trend Hoode</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:10000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Eaget Flash Drive 3.0 64GB - Metal OTG Micro.jpg', name:'Eaget Flash Drive 3.0 64GB - Metal OTG Micro', price:10000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Eaget Flash Drive 3.0 64GB - Metal OTG Micro.jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Eaget Flash Drive</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:10000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Edifier 68 Watts Channel Bluetooth Multimedia Speakers_yyt.jpg', name:'Edifier 68 Watts Channel Bluetooth Multimedia Speakers', price:10000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Edifier 68 Watts Channel Bluetooth Multimedia Speakers_yyt.jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Bluetooth Multimedia Speakers</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:10000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Efero Teeth Whitening Essence.jpg', name:'Efero Teeth Whitening Essence', price:10000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Efero Teeth Whitening Essence.jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Efero Teeth Whitening</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:10000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Electronics.png', name:'Mobile Electronics', price:10000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Electronics.png" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Electronics</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:10000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Eva Water 75cl x12 (Eva).jpg', name:'Eva Water 75cl x12 (Eva)', price:10000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Eva Water 75cl x12 (Eva).jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Eva Water 75cl</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
@@ -588,60 +588,60 @@
             </header>
             <section class="mb-4  shadow  card " style="overflow-x: scroll;" id="scroolbar">
                 <div class="d-flex ">
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:5000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Groceries.png', name:'Mama Pride Rice', price:5000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Groceries.png" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Groceries Rice</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:5000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Hisense 32 Inches FHD LED TV (A5100) - Black.jpg', name:'Hisense 32 Inches FHD LED TV (A5100) - Black', price:5000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Hisense 32 Inches FHD LED TV (A5100) - Black.jpg" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Hisense 32 Inches LED TV</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:5000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Infinix HOT 30 Play HD 8GB 128GB Android 13_.jpg', name:'Infinix HOT 30 Play HD 8GB 128GB Android 13', price:5000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Infinix HOT 30 Play HD 8GB 128GB Android 13_.jpg" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Infinix HOT Android</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:5000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'itel 10000MAh Star100 Fast Charging Powerbank - Bla', price:5000})">
                         <div class=" py-2 text-center">
                             <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >itel 10000MAh Star</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:5000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Men_s Sneakers.png', name:'Men_s Sneakers', price:5000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Men_s Sneakers.png" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Men_s Sneakers</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:5000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg', name:'Minimie Chin Chin Snack Jar 900G X1 (Minimie)', price:5000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Minimie Chin Chin Snack Jar</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:5000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Nexus 1.5HP Split_Air Conditioner (NX-MSSH12000SC_TL)_- White_yyt.jpg', name:'Nexus 1.5HP Split_Air Conditioner (NX-MSSH12000SC_TL)_- White', price:5000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Nexus 1.5HP Split_Air Conditioner (NX-MSSH12000SC_TL)_- White_yyt.jpg" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Nexus Split_Air Conditioner</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg', name:'Mobile Accessories', price:5000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Nexus 16 Inches Standing Fan (NX 4400B) - Bl (1).jpg', name:'Nexus 16 Inches Standing Fan (NX 4400B) - Bl (1)', price:5000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Nexus 16 Inches Standing Fan (NX 4400B) - Bl (1).jpg" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Nexus Standing Fan</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
                 </div>
@@ -651,57 +651,19 @@
             <header class=" px-2 py-3 mb-1 text-center fs-5 fw-bold" style="background-color:#e61601;color: white;">
                 Flash Sales
             </header>
-            <div>
-                <div class="row px-3">
-                    <div class="col-lg-2 col-4 card my-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
-                        <div class="mx-auto" >Mobile Accessories</div>
-                    </div>
-                    <div class="col-lg-2 col-4 card my-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
-                        <div class="mx-auto" >Mobile Accessories</div>
-                    </div>
-                    <div class="col-lg-2 col-4 card my-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
-                        <div class="mx-auto" >Mobile Accessories</div>
-                    </div>
-                    <div class="col-lg-2 col-4 card my-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
-                        <div class="mx-auto" >Mobile Accessories</div>
-                    </div>
-                    <div class="col-lg-2 col-4 card my-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
-                        <div class="mx-auto" >Mobile Accessories</div>
-                    </div>
-                    <div class="col-lg-2 col-4 card my-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
-                        <div class="mx-auto" >Mobile Accessories</div>
-                    </div>
-                    <div class="col-lg-2 col-4 card my-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
-                        <div class="mx-auto" >Mobile Accessories</div>
-                    </div>
-                    <div class="col-lg-2 col-4 card my-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
-                        <div class="mx-auto" >Mobile Accessories</div>
-                    </div>
-                    <div class="col-lg-2 col-4 card my-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
-                        <div class="mx-auto" >Mobile Accessories</div>
-                    </div>
-                    <div class="col-lg-2 col-4 card my-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
-                        <div class="mx-auto" >Mobile Accessories</div>
-                    </div>
-                    <div class="col-lg-2 col-4 card my-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
-                        <div class="mx-auto" >Mobile Accessories</div>
-                    </div>
-                    <div class="col-lg-2 col-4 card my-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
-                        <div class="mx-auto" >Mobile Accessories</div>
-                    </div>
-                </div>
+            <div class="row container-xl px-3 pe-0">
+                <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/50_ Off & Above.png" alt="" class="col-lg-2 col-3 card px-0">
+                <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/50_ Off & More.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Below ₦100_000.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Below ₦150_000.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Below ₦200_000.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Below ₦20_000.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Below ₦50_000.jpg" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Below ₦80_000.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Best Deals on Drinks.jpg" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Best Sellers.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Up to 30_ Off.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Official Stores.png" alt="" class="col-lg-2 col-3 card px-0" >
             </div>
         </section>
         <div class="container-lg card px-0 mb-4">
@@ -713,67 +675,67 @@
             </header>
             <section class="mb-4  shadow " style="overflow-x: scroll;" id="scroolbar">
                 <div class="d-flex ">
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:6000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Oraimo 27000Mah Portable Power Banks Fast Charge Ma.jpg', name:'Oraimo 27000Mah Portable Power Banks Fast Charge Ma', price:6000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Oraimo 27000Mah Portable Power Banks Fast Charge Ma.jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Oraimo Portable Power Banks </div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:6000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Oraimo Roll Dynamic True Wireless Earbuds Sound Noi.jpg', name:'Oraimo Roll Dynamic True Wireless Earbuds Sound Noi', price:6000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Oraimo Roll Dynamic True Wireless Earbuds Sound Noi.jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Oraimo Roll Wireless</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:6000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Oraimo Watch 2 Pro BT Call Quick Reply Healt.jpg', name:'Oraimo Watch 2 Pro BT Call Quick Reply Healt', price:6000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Oraimo Watch 2 Pro BT Call Quick Reply Healt.jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Oraimo Watch Pro</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:6000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Phones & Tablets.png', name:'Phones & Tablets', price:6000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Phones & Tablets.png" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Iphone 12pro</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:6000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/QUBO SP510 - 5 Inch 8GB 1GB RAM_ 5MP.jpg', name:'QUBO SP510 - 5 Inch 8GB 1GB RAM_ 5MP', price:6000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/QUBO SP510 - 5 Inch 8GB 1GB RAM_ 5MP.jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >QUBO SP510</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:6000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Samsung Galaxy A14 - 6.6_ (4GB RAM_ 128GB RO.jpg', name:'Samsung Galaxy A14 - 6.6_ (4GB RAM_ 128GB RO', price:6000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Samsung Galaxy A14 - 6.6_ (4GB RAM_ 128GB RO.jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Samsung Galaxy A14</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:6000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Refrigerators.jpg', name:'Refrigerators', price:6000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Refrigerators.jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Refrigerators</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:6000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-2" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Samsung Galaxy A54 5G 6.4_ 256GB 8GB Facial.jpg', name:'Samsung Galaxy A54 5G 6.4_ 256GB 8GB Facial', price:6000})">
                         <div class=" py-2 text-center">
-                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="200">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Samsung Galaxy A54 5G 6.4_ 256GB 8GB Facial.jpg" alt="" class="img-fluid" width="200">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Samsung Galaxy A54</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>
                         <del class="ps-2">3,000</del>                
                     </button>
@@ -789,46 +751,46 @@
             </header>
             <section class="mb-4  shadow  card " style="overflow-x: scroll;" id="scroolbar">
                 <div class="d-flex ">
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:2000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Six Pairs-in-1 Quality Ankle Socks.jpg', name:'Six Pairs-in-1 Quality Ankle Socks', price:2000})">
                         <div class=" py-2 text-center">
-                            <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Six Pairs-in-1 Quality Ankle Socks.jpg" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Ankle Socks</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:2000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Sprite Drink - 50cl Pet x 12.jpg', name:'Sprite Drink - 50cl Pet x 12', price:2000})">
                         <div class=" py-2 text-center">
-                            <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Sprite Drink - 50cl Pet x 12.jpg" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Sprite Drink </div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:2000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/T-Shirts _Shorts 100_ Cotton Men_s Short Sleeve Set.jpg', name:'T-Shirts _Shorts 100_ Cotton Men_s Short Sleeve Set', price:2000})">
                         <div class=" py-2 text-center">
-                            <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/T-Shirts _Shorts 100_ Cotton Men_s Short Sleeve Set.jpg" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >T-Shirts _Shorts Cotton </div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:2000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Tecno Pop 7 Pro，6.6__ 3GB RAM(Up To 6GB) __y.jpg', name:'Tecno Pop 7 Pro，6.6__ 3GB RAM(Up To 6GB)', price:2000})">
                         <div class=" py-2 text-center">
-                            <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Tecno Pop 7 Pro，6.6__ 3GB RAM(Up To 6GB) __y.jpg" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Tecno Pop 7 Pro 3GB RAM</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:2000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Televisions.jpg', name:'Mobile   Televisions', price:2000})">
                         <div class=" py-2 text-center">
-                            <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Televisions.jpg" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >Televisions</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
-                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:2000})">
+                    <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/XIAOMI Redmi Note11Snapdragon 680  50MP Camera 4G_y.jpg', name:'XIAOMI Redmi Note11Snapdragon 680  50MP Camera 4G_y', price:2000})">
                         <div class=" py-2 text-center">
-                            <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/itel 10000MAh Star100 Fast Charging Powerbank - Bla.jpg" alt="" class="img-fluid" width="">
+                            <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/XIAOMI Redmi Note11Snapdragon 680  50MP Camera 4G_y.jpg" alt="" class="img-fluid" width="">
                         </div>
-                        <div class="ps-2" >Mobile Accessories</div>
+                        <div class="ps-2" >XIAOMI Redmi Note11Snapdragon</div>
                         <div class="fw-bold ps-2"> ₦9,000 </div>                  
                     </button>
                     <button class="col-4 col-md-2 col-lg-2 card pb-3" id="hover" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addToCart({image:'Jumia Nigeria _ Online Shopping for Groceries_ Appl/Jumia Food.png', name:'Mobile Accessories', price:2000})">
@@ -848,7 +810,7 @@
                 </div>
             </section>
         </div>
-        <section class="my-4 container-lg shadow  card px-0">
+        <!-- <section class="my-4 container-lg shadow  card px-0">
             <header class="text-center px-3 py-3 fs-5" style="background-color: #b076da;">
                 <div class="fw-bold  ">
                     Great Home Appliances for Less
@@ -881,7 +843,7 @@
                 </div>
               
             </div>
-        </section>
+        </section> -->
         <div class="container-lg card px-0 mb-3">
             <header class="d-flex justify-content-between px-2   py-3 mb-1" style="background-color:#e61601;color: white;">
                 <div class="fw-bold fs-5">
@@ -950,7 +912,7 @@
                 </div>
             </section>
         </div>
-        <section class="my-4 container-lg shadow  card px-0">
+        <!-- <section class="my-4 container-lg shadow  card px-0">
             <header class="text-center px-3 py-3 fs-5" style="background-color: #b076da;">
                 <div class="fw-bold  ">
                     Great Home Appliances for Less
@@ -981,7 +943,7 @@
                     <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Minimie Chin Chin Snack Jar 900G X1 (Minimie).jpg" alt="" class="" >
                     <div class="mx-auto" >Mobile Accessories</div>
                 </div>
-            </div>
+            </div> -->
             <div class="container-lg card px-0 mb-3">
                 <header class="d-flex justify-content-between px-2   py-3 mb-1" style="background-color:#e61601;color: white;">
                     <div class="fw-bold fs-5">
@@ -1051,27 +1013,119 @@
                 </section>
             </div>
         </section>
-        
-        
-        <div class="card my-3 container-lg">
-            <div class="row">
-                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1605874160/contentservice/hp.png_BJTuxM4r9w.png" alt="" class="col-lg-2 col-3 card" >
-                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1605874103/contentservice/itec.png_ry0n-NSqP.png" alt="" class="col-lg-2 col-3 card" >
-                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1624436320/contentservice/Intel.png_BySv0vehO.png" alt="" class="col-lg-2 col-3 card" >
-                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1677226673/contentservice/dgf.jpg_S1_nGl8Ao.jpg" alt="" class="col-lg-2 col-3 card" >
-                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1654253801/contentservice/tecs.png_HyZeKPw_c.png" alt="" class="col-lg-2 col-3 card" >
-                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1605874108/contentservice/uni.png_S10ET-Vrcv.png" alt="" class="col-lg-2 col-3 card" >
-                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1656326346/contentservice/philip.png_Bya6_WD9c.png" alt="" class="col-lg-2 col-3 card" >
-                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1605874087/contentservice/coke.png_H1khbVHcv.png" alt="" class="col-lg-2 col-3 card" >
-                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1674721128/contentservice/Huawei.jpg_ByJ_v2y3j.jpg" alt="" class="col-lg-2 col-3 card" >
-                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1621431873/contentservice/lenovo%20logo.png_rJIrIcMtO.png" alt="" class="col-lg-2 col-3 card" >
-                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1643360594/contentservice/brands.png_H1d8ZNbAK.png" alt="" class="col-lg-2 col-3 card" >
-                <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1660565787/contentservice/vivo%20logo.png_HkMXthw05.png" alt="" class="col-lg-2 col-3 card" >
+        <section class=" container-lg card my-3 px-0">
+            <header class=" px-2 py-3 mb-1 text-center fs-5 fw-bold" style="background-color:#e61601;color: white;">
+                Flash Sales
+            </header>
+            <div class="row container-xl px-3 pe-0">
+                <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/50_ Off & Above.png" alt="" class="col-lg-2 col-3 card px-0">
+                <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/50_ Off & More.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Below ₦100_000.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/Below ₦150_000.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Below ₦200_000.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Below ₦20_000.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Below ₦50_000.jpg" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Below ₦80_000.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Best Deals on Drinks.jpg" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Best Sellers.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Up to 30_ Off.png" alt="" class="col-lg-2 col-3 card px-0" >
+                <img src="Jumia Nigeria _ Online Shopping for Groceries_ Appl/Official Stores.png" alt="" class="col-lg-2 col-3 card px-0" >
             </div>
-        </div>
-      
-        
-        
+        </section>
+     =
+          <footer class="bg-dark text-light">
+            <div class="container py-4">
+              <div class="row">
+                <div class="col-md-3">
+                  <h4>Shop</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Sale</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h4>About Us</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h4>Customer Service</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Shipping &amp; Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h4>Follow Us</h4>
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-pinterest"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <div class="text-center">
+                <p>&copy; 2023 Juima. All rights reserved.</p>
+              </div>
+            </div>
+          </footer>
+          <footer class="bg-dark text-light">
+            <div class="container py-4">
+              <div class="row">
+                <div class="col-md-3">
+                  <h4>Shop</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Phones &amp; Tablets</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Home &amp; Office</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h4>About Jumia</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h4>Customer Service</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Returns &amp; Refunds</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">How to Sell on Jumia</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h4>Stay Connected</h4>
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-youtube"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <div class="text-center">
+                <p>&copy; 2023 Jumia Nigeria. All rights reserved.</p>
+              </div>
+            </div>
+          </footer>
+          
         
     </body>
 </html>

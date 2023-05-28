@@ -19,6 +19,7 @@
   } */
   body {
     background-color: whitesmoke;
+    /* overflow-x: hidden; */
   }
   ::-webkit-scrollbar-thumb{
     /* display: none; */
@@ -33,7 +34,7 @@
     height: 0.3rem;
   }
   #hover:hover {
-    transform: scale(1.1,1.1);
+    transform: scale(1.05,1.05);
     transition: 1s;
   }
   small {
