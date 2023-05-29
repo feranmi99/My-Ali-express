@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>signup</title>
+        <link rel="stylesheet" href="./Login.css">
+    </head>
+    <body>
+        <div class="form">
+            <p class="title">Sign-up </p>
+           
+            <label>
+                <input placeholder="Email" type="email" class="input" id="email">
+                
+            </label> 
+                
+            <label>
+                <input  placeholder="Password"  class="input" id="password">
+                
+            </label>
+            <button class="submit" onclick="signin()">Submit</button>
+            <p class="signin">Create A New Acount ? 
+                <a href="./index.html">Create An Acount</a> 
+            </p>
+            
+        </div>
+        <div id="dis" style="color: red;text-align: center;font-size: larger;font-weight: 400;"></div>
+        <div id="show" style="color: green;text-align: center;font-size: larger;font-weight: 400;"></div>
+        <script>
+            let alluser = JSON.parse(localStorage.getItem("Mybank"))
+            console.log(alluser);
+            let userfound = false
+            const signin = () => {
+                let found = alluser.find((each, index) => (each.email === email.value && each.password === password.value));
+                if(found){
+                    console.log(found.accountnumber);
+                    let key = found.accountnumber;
+                    localStorage.setItem("key", JSON.stringify(key));
+                    show.innerHTML = ` ✔ Login Sucssefully`
+                    setTimeout(() => {
+                        window.location.href = "dashborad.html"
+                    }, 3000);
+
+                }else{
+                    dis.innerHTML = " account does not exist."
+                }
+            }
+        </script>
+    </body>
+</html>

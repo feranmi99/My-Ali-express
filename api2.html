@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paystack Payment</title>
+</head>
+<body>
+  <button onclick="makePayment()">Pay Now</button>
+
+  <script>
+    function makePayment() {
+      // Replace with your Paystack API endpoint URL
+      var paystackURL = 'https://api.paystack.co/transaction/initialize';
+
+      // Replace with your Paystack API public key
+      var publicKey = 'YOUR_PUBLIC_KEY';
+
+      // Replace with the payment details (amount, email, etc.)
+      var paymentData = {
+        amount: 50000, // Payment amount in kobo (e.g., 50000 for ₦500)
+        email: 'customer@example.com', // Customer's email address
+        reference: 'YOUR_UNIQUE_REFERENCE', // Unique reference for the transaction
+        callback_url: 'https://example.com/callback', // Replace with your callback URL
+        // Add additional payment details if required
+      };
+
+      // Make a POST request to the Paystack API endpoint
+      fetch(paystackURL, {
+        method: 'POST',
+        headers: {
+          'Authorization': 'Bearer ' + publicKey,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(paymentData)
+      })
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        // Handle the response from the Paystack API
+        var authorizationURL = data.data.authorization_url;
+        // Redirect the user to the authorization URL or open in a new window
+        window.location.href = authorizationURL;
+      })
+      .catch(function(error) {
+        console.error('Error occurred:', error);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -4,41 +4,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment with Paystack API</title>
+  <title>Document</title>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+
 </head>
 <body>
   <button id="payButton">Pay Now</button>
 
-  <script src="https://js.paystack.co/v1/inline.js"></script>
-  <script>
-    // Get the trigger element
-    var payButton = document.getElementById('payButton');
 
-    // Add click event listener
-    payButton.addEventListener('click', initiatePayment);
+    <script>
+      // Get the trigger element
+      let payButton = document.getElementById('payButton');
 
-    // Handle the payment process
-    function initiatePayment() {
-      // Call Paystack API to initialize payment
-      var handler = PaystackPop.setup({
-        key: 'sk_test_6e23f3fa72de85f9389fbd7164b0dc845df713b8', // Replace with your Paystack public key
-        email: 'customer@example.com', // Replace with customer's email address
-        amount: 50000, // Replace with the payment amount in kobo (e.g., 50000 for ₦500)
-        currency: 'NGN', // Replace with your desired currency code
-        ref: 'YOUR_UNIQUE_REFERENCE', // Replace with your unique reference for the transaction
-        callback: function(response) {
-          // This function is called after a successful payment
-          alert('Payment successful. Transaction reference: ' + response.reference);
-        },
-        onClose: function() {
-          // This function is called if the payment popup is closed without completing the payment
-          alert('Payment window closed.');
-        }
-      });
+      // Add click event listener
+      payButton.addEventListener('click', initiatePayment);
 
-      // Open the payment popup
-      handler.openIframe();
-    }
-  </script>
+      // Handle the payment process
+      function initiatePayment() {
+        // Call Paystack API to initialize payment
+        let handler = PaystackPop.setup({
+          key: 'pk_test_fb8e6ca8bf86aecccd78ba8772768e112d45e32a', // Replace with your Paystack public key
+          email: 'customer@example.com', // Replace with customer's email address
+          amount: 50000, // Replace with the payment amount in kobo (e.g., 50000 for ₦500)
+          currency: 'NGN', // Replace with your desired currency code
+          ref: 'YOUR_UNIQUE_REFERENCE', // Replace with your unique reference for the transaction
+          callback: function(response) {
+            // This function is called after a successful payment
+            alert('Payment successful. Transaction reference: ' + response.reference);
+          },
+          onClose: function() {
+            // This function is called if the payment popup is closed without completing the payment
+            alert('Payment window closed.');
+          }
+        });
+
+        // Open the payment popup
+        handler.openIframe();
+      }
+
+    </script>
 </body>
 </html>
