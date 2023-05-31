@@ -67,35 +67,5 @@
     <div  class="container-lg shadow-lg card">
         <div class="row" id="disp"></div>
     </div>
-    
-    <!-- <script>
-        // Get the trigger element
-        var payButton = document.getElementById('payButton');
-        // Add click event listener
-        payButton.addEventListener('click', initiatePayment);
-        // Handle the payment process
-        function initiatePayment() {
-          // Call Paystack API to initialize payment
-          var handler = PaystackPop.setup({
-            key: 'pk_test_fb8e6ca8bf86aecccd78ba8772768e112d45e32a', // Replace with your Paystack public key
-            email: 'customer@example.com', // Replace with customer's email address
-            amount: 50000, // Replace with the payment amount in kobo (e.g., 50000 for ₦500)
-            currency: 'NGN', // Replace with your desired currency code
-            ref: 'YOUR_UNIQUE_REFERENCE', // Replace with your unique reference for the transaction
-            callback: function(response) {
-              // This function is called after a successful payment
-              alert('Payment successful. Transaction reference: ' + response.reference);
-            },
-            onClose: function() {
-              // This function is called if the payment popup is closed without completing the payment
-              alert('Payment window closed.');
-            }
-          });
-  
-          // Open the payment popup
-          handler.openIframe();
-        }
-  
-      </script> -->
 </body>
 </html>

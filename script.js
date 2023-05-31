@@ -64,125 +64,71 @@
 
     }
     const cart = () => {
-      let alluser = JSON.parse(localStorage.getItem("cart"));
-      lenght.textContent = alluser.length;
-      disp.innerHTML = "";
-      alluser.map((value, index) => {
-        disp.innerHTML += `
-          <div class="col-md-4 col-sm-6 col-6 px-0 py-1">
-            <div class="card">
-              <div class="d-inline d-lg-flex justify-content-between p-1 ">
-                <div class="text-center">
-                  <img alt="" class="img-fluid rounded" width="400" src="${value.image}" >
-                </div>
-                <div class="px-3 text-center">
-                  <p><span class="fw-bold">${value.name}</span></p>
-                  <p><span class="fw-bold">₦ ${value.price}</span></p>
-                </div>
-                <div class="d-flex">
-                  <button id="payButton${index}" class="btn btn-info fw-bold">Pay Now</button>
-                  <button class="btn btn-info fw-bold mx-1" onclick="Delete()">Delete</button>
-                </div>
-              </div>
+  let alluser = JSON.parse(localStorage.getItem("cart"));
+  lenght.textContent = alluser.length;
+  disp.innerHTML = "";
+  alluser.map((value, index) => {
+    disp.innerHTML += `
+      <div class="col-md-4 col-sm-6 col-6 px-0 py-1">
+        <div class="card">
+          <div class="d-inline d-lg-flex justify-content-between p-1 ">
+            <div class="text-center">
+              <img alt="" class="img-fluid rounded" width="400" src="${value.image}" >
             </div>
-          </div>`;
-      });
-      mytotal.innerHTML = JSON.parse(localStorage.getItem("totalBalance"));
-    
-      // Attach event listeners to pay buttons
-      alluser.forEach((value, index) => {
-        let payButton = document.getElementById(`payButton${index}`);
-        payButton.addEventListener('click', () => initiatePayment(index));
-      });
-    };
-    
-    // Handle the payment process
-    function initiatePayment(index) {
-      let alluser = JSON.parse(localStorage.getItem("cart"));
-      let value = alluser[index];
-    
-      // Call Paystack API to initialize payment
-      let handler = PaystackPop.setup({
-        key: 'pk_test_fb8e6ca8bf86aecccd78ba8772768e112d45e32a', // Replace with your Paystack public key
-        email: 'customer@example.com', // Replace with customer's email address
-        amount: 50000, // Replace with the payment amount in kobo (e.g., 50000 for ₦500)
-        currency: 'NGN', // Replace with your desired currency code
-        ref: 'YOUR_UNIQUE_REFERENCE', // Replace with your unique reference for the transaction
-        callback: function(response) {
-          // This function is called after a successful payment
-          alert('Payment successful. Transaction reference: ' + response.reference);
-        },
-        onClose: function() {
-          // This function is called if the payment popup is closed without completing the payment
-          alert('Payment window closed.');
-        }
-      });
-    
-      // Open the payment popup
-      handler.openIframe();
-    };
-    
+            <div class="px-3 text-center">
+              <p><span class="fw-bold">${value.name}</span></p>
+              <p><span class="fw-bold">₦ ${value.price}</span></p>
+            </div>
+            <div class="d-flex">
+              <button id="payButton${index}" style="background-color:orange;color:white" class="btn fw-bold">Pay Now</button>
+              <button class="btn btn-danger fw-bold mx-1" onclick="Delete(${index})">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>`;
+  });
+  mytotal.innerHTML = JSON.parse(localStorage.getItem("totalBalance"));
+
+  // Attach event listeners to pay buttons
+  alluser.forEach((value, index) => {
+    let payButton = document.getElementById(`payButton${index}`);
+    payButton.addEventListener('click', () => initiatePayment(index));
+  });
+};
+
+// Handle the payment process
+function initiatePayment(index) {
+  let alluser = JSON.parse(localStorage.getItem("cart"));
+  let value = alluser[index];
+
+  // Call Paystack API to initialize payment
+  let handler = PaystackPop.setup({
+    key: 'pk_test_fb8e6ca8bf86aecccd78ba8772768e112d45e32a', // Replace with your Paystack public key
+    email: 'customer@example.com', // Replace with customer's email address
+    amount: 50000, // Replace with the payment amount in kobo (e.g., 50000 for ₦500)
+    currency: 'NGN', // Replace with your desired currency code
+    ref: 'YOUR_UNIQUE_REFERENCE', // Replace with your unique reference for the transaction
+    callback: function(response) {
+      // This function is called after a successful payment
+      alert('Payment successful. Transaction reference: ' + response.reference);
+    },
+    onClose: function() {
+      // This function is called if the payment popup is closed without completing the payment
+      alert('Payment window closed.');
+    }
+  });
+
+  // Open the payment popup
+  handler.openIframe();
+};
+
       
-    // const cart = ()=> {
-    //     let alluser = JSON.parse(localStorage.getItem("cart")) 
-    //     lenght.textContent = alluser.length;
-    //     disp.innerHTML = "";
-    //     alluser.map((value, index) => {
-    //         disp.innerHTML +=`<div class="col-md-4 col-sm-6 col-6 px-0 py-1">
-    //         <div class="card">
-    //             <div class="d-inline d-lg-flex justify-content-between p-1 ">
-    //                 <div class="text-center">
-    //                     <img alt="" class="img-fluid rounded" width="400" src="${value.image}" >
-    //                 </div>
-    //                 <div class="px-3 text-center">
-    //                     <p><span class="fw-bold">${value.name}</span> </p>
-    //                     <p><span class="fw-bold">₦ ${value.price}</p>
-    //                 </div>
-    //                 <div class="d-flex">
-    //                 <button id="payButton" onclick="payButton(${index})" class="btn btn-info fw-bold" id="payButton" >Pay Now</button>
-    //                 <button class="btn btn-info fw-bold mx-1" onclick="Delete()">Delete</button>
 
-    //                 </div>
-
-    //             </div>
-    //         </div> 
-    //     </div>`
-    //     })
-    //     // console.log(alluser)
-    //     mytotal.innerHTML = JSON.parse(localStorage.getItem("totalBalance"))
-    // };
-    // let payButton = document.getElementById('payButton');
-
-    // // Add click event listener
-    // payButton.addEventListener('click', initiatePayment);
-
-    // // Handle the payment process
-    // function initiatePayment() {
-    //   // Call Paystack API to initialize payment
-    //   let handler = PaystackPop.setup({
-    //     key: 'pk_test_fb8e6ca8bf86aecccd78ba8772768e112d45e32a', // Replace with your Paystack public key
-    //     email: 'customer@example.com', // Replace with customer's email address
-    //     amount: 50000, // Replace with the payment amount in kobo (e.g., 50000 for ₦500)
-    //     currency: 'NGN', // Replace with your desired currency code
-    //     ref: 'YOUR_UNIQUE_REFERENCE', // Replace with your unique reference for the transaction
-    //     callback: function(response) {
-    //       // This function is called after a successful payment
-    //       alert('Payment successful. Transaction reference: ' + response.reference);
-    //     },
-    //     onClose: function() {
-    //       // This function is called if the payment popup is closed without completing the payment
-    //       alert('Payment window closed.');
-    //     }
-    //   });
-
-    //   // Open the payment popup
-    //   handler.openIframe();
-    // };
     const cartt = ()=>{
         window.location.href ="cart.html"
     }
     const home = ()=>{
-        window.location.href ="index.html"
+        window.location.href ="dashboard.html"
     }
     const deleteall = ()=>{
         let bal = 0
