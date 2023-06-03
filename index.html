@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Jumia Nigeria _ Online Shopping for Groceries_ Appl/favicon.87f00114.ico">
   </head>
   <body>
 
     <div class="login-box">
 
-        <form>
+      <div>
         <div class="user-box">
             <input type="text" name="" required="" id="Firstname">
             <label>Firstname</label>
@@ -29,14 +30,14 @@
             <label>Password</label>
         </div>
         <center>
-            <a href="#" onclick="createne()">
+            <button onclick="createne()">
                 Submit
                 <span></span>
-            </a>
+            </button>
         </center>
-      </form>
+      </div>
       <p class="signin">Already have an acount ? 
-          <a href="./Signup.html">Signin</a> </p>
+          <a href="signIn.html">Signin</a> </p>
     </div>
     <div id="dis" style="color: red;text-align: center;font-size: larger;font-weight: 400;margin-top: 50px;"></div>
     <div id="show" style="color: green;text-align: center;font-size: larger;font-weight: 400;"></div>
@@ -45,12 +46,12 @@
         if (localStorage.costumer) {
             alluser = JSON.parse(localStorage.getItem("costumer")) 
             
-        }
+        };
         const createne = ()=> {
             let Firstname = document.getElementById("Firstname").value;
-            let Lastname = document.getElementById("Lastname").value
-            let email = document.getElementById("email").value
-            let password = document.getElementById("password").value
+            let Lastname = document.getElementById("Lastname").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
 
             let user = {
                 Firstname: Firstname,
@@ -58,19 +59,18 @@
                 email: email,
                 password: password,
 
-            } 
+            };
             if (Firstname == "" && Lastname == "" && email =="" && password == "") {
                 dis.innerHTML = "Please Enter Your Infomation"
             } else {
-              alluser.push(user),
+              alluser.push(user);
               console.log(alluser);
-              localStorage.setItem("costumer",JSON.stringify(alluser) )
-              show.innerHTML = ` ✔ Signup Sucssefully`
+              localStorage.setItem("costumer",JSON.stringify(alluser) );
+              show.innerHTML = ` ✔ Signup Sucssefully`;
               setTimeout(() => {
-                  window.location.href = "signIn.html"
+                  window.location.href = "signin.html"
               }, 3000);
-              console.log(alluser);
-
+              
               Firstname.value = ""
               Lastname.value = ""
               email.value = ""
@@ -79,39 +79,6 @@
             }
         }
     </script>
-    <script type="module">
     
-      import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
-
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
-      
-      const firebaseConfig = {
-        apiKey: "AIzaSyCUu3YjnqpXjQiTWEHbj9fXjbzB6G_gRHs",
-        authDomain: "todo-app-bf1a7.firebaseapp.com",
-        projectId: "todo-app-bf1a7",
-        storageBucket: "todo-app-bf1a7.appspot.com",
-        messagingSenderId: "266909884883",
-        appId: "1:266909884883:web:70cc1d19fb662bfde40f26"
-      };
-      
-      // Initialize Firebase
-      const provider = new GoogleAuthProvider();
-      const app = initializeApp(firebaseConfig);
-      const auth = getAuth();
-
-      const google = ()=>{
-        signInWithPopup(auth, provider)
-          .then((result) => {
-
-            console.log(result);
-            window.location.href = "note.html"
-          }).catch((error) => {
-  
-          console.log(error);
-          });
-
-      }
-      window.google = google
-    </script>
   </body>
 </html>

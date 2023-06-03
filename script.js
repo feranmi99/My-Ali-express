@@ -33,6 +33,7 @@
         let timeString = hours + ":" + minutes + ":" + seconds + " " + period;
         document.getElementById("clock").innerHTML = timeString;
     };
+
     const addToCart = (e) =>{
         let images = e.image;
         let names = e.name;
@@ -52,7 +53,7 @@
 
         let initialBalance = e.price;
         if(!localStorage.totalBalance){
-            console.log(e);
+            // console.log(e);
             localStorage.setItem("totalBalance", JSON.stringify(initialBalance))
         }else{
             initialBalance = JSON.parse(localStorage.getItem("totalBalance"))
@@ -75,8 +76,8 @@
             <div class="text-center">
               <img alt="" class="img-fluid rounded" width="400" src="${value.image}" >
             </div>
-            <div class="px-3 text-center">
-              <p><span class="fw-bold">${value.name}</span></p>
+            <div class="px-3 tfw-medium text-center">
+              <p><span class="">${value.name}</span></p>
               <p><span class="fw-bold">₦ ${value.price}</span></p>
             </div>
             <div class="d-flex">
@@ -87,7 +88,7 @@
         </div>
       </div>`;
   });
-  mytotal.innerHTML = JSON.parse(localStorage.getItem("totalBalance"));
+  mytotal.innerHTML =`₦ `+ JSON.parse(localStorage.getItem("totalBalance"));
 
   // Attach event listeners to pay buttons
   alluser.forEach((value, index) => {
@@ -140,23 +141,31 @@ function initiatePayment(index) {
         cart()
     }
     const Delete = (e)=>{
+      console.log(e);
         let alluser = JSON.parse(localStorage.getItem("cart")) 
         alluser.splice(e, 1);
         console.log(alluser);
         localStorage.setItem("cart", JSON.stringify(alluser));
 
-        // let initialBalance = e
-        // console.log(e);
-        // if(!localStorage.totalBalance){
-        //     console.log(e);
-        //     localStorage.setItem("totalBalance", JSON.stringify(initialBalance))
-        // }else{
-        //     initialBalance = JSON.parse(localStorage.getItem("totalBalance"))
-        //     initialBalance = initialBalance - e.price;
-        //     console.log(initialBalance);
-        //     localStorage.setItem("totalBalance", JSON.stringify(initialBalance))
-        // }
-
-        // location.reload()
+        let initialBalance = alluser[e].price
+        console.log(initialBalance);
+        if(!localStorage.totalBalance){
+            console.log(e);
+            localStorage.setItem("totalBalance", JSON.stringify(initialBalance))
+        }else{
+            initialB = JSON.parse(localStorage.getItem("totalBalance"))
+            initialBalances = initialB - initialBalance;
+            console.log(initialBalances);
+            localStorage.setItem("totalBalance", JSON.stringify(initialBalances))
+        }
         cart()
+    }
+    const logout = ()=> {
+        setTimeout(() => {
+          window.location.href = "index.html"
+        }, 3000);
+    }
+    const user = ()=> {
+      window.location.href="user.html"
+
     }

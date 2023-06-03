@@ -17,6 +17,16 @@
   /* li {
     list-style: none;
   } */
+  #bottomButton {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    border: 2px solid orange;
+    background-color: white;
+    scroll-behavior:smooth;
+    color: black;
+    z-index: 9999;
+  }
   body {
     background-color: whitesmoke;
     /* overflow-x: hidden; */

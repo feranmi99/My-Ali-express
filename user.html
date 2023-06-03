@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jumia Dashborad</title>
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+
+        <script src="bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+        <link rel="icon" href="Jumia Nigeria _ Online Shopping for Groceries_ Appl/favicon.87f00114.ico">
+
+        <link rel="stylesheet" href="dd.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="get()">
+        <!-- <div class="p-1 bg-light">
+            <div class="container-lg justify-content-between d-flex">
+                <button class="btn btn-danger ">log-out</button>
+                <button class="btn btn-primary ">User</button>
+            </div>
+        </div> -->
+        <nav class="navbar sticky-top" style="background-color: white;">
+            <div class="container-lg d-flex px-2">
+                <a class=" col " href="#"><img src="./Screenshot 2023-05-16 160437.jpg" alt="" class="img-fluid" width=""></a>
+                <input class="form-control mx-2 col d-sm-none d-md-block d-none d-sm-block" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn fw- d-none d-lg-block col-1" style="background-color: orange;color: white;font-size: larger;"  type="submit">Search</button>
+                <div class="btn-group gap-2 ms-2 fs-5" role="group" aria-label="Default button group">
+                    <button type="button" class="btn btn-warning  fw-bold  text-light" onclick="home()">Home</button>
+                    <button type="button" class="btn btn-warning fw-bold text-light " onclick="cartt()">Cart 🛒<sup id="lenght" class="bg-danger rounded-circle px-2 py-1">0</sup></button>
+                </div>  
+            </div>
+        </nav>
+        <!-- <div class="container-lg"> -->
+            <ul class="list-group list-group-flush mt-3 "  id="show">
+                
+            </ul>
+        </div>
+    <!-- <div id="show"></div> -->
+    <script>
+        // <li class="list-group-item fw-bold fs-5 px-4">${alluser + 1}</li>
+        let alluser = JSON.parse(localStorage.getItem("costumer"))
+        const get = (e)=> {
+            console.log(alluser);
+            show.innerHTML += `
+            <li class="list-group-item fw-bold fs-5 px-4">${alluser[0].Firstname}</li>
+            <li class="list-group-item fw-bold fs-5 px-4">${alluser[0].Lastname}</li>
+            <li class="list-group-item fw-bold fs-5 px-4">${alluser[0].email}</li>
+            <button class="btn btn-danger my-3 col fw-bold" onclick="deleteitem()">Delete Account</button>
+            `
+        }
+        const deleteitem = ()=> {
+            setTimeout(() => {
+                window.location.href="index.html"
+                
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
