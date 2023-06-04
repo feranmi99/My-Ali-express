@@ -37,7 +37,7 @@
         </center>
       </div>
       <p class="signin">Already have an acount ? 
-          <a href="signIn.html">Signin</a> </p>
+          <a href="signup.html">Signin</a> </p>
     </div>
     <div id="dis" style="color: red;text-align: center;font-size: larger;font-weight: 400;margin-top: 50px;"></div>
     <div id="show" style="color: green;text-align: center;font-size: larger;font-weight: 400;"></div>
@@ -68,7 +68,7 @@
               localStorage.setItem("costumer",JSON.stringify(alluser) );
               show.innerHTML = ` ✔ Signup Sucssefully`;
               setTimeout(() => {
-                  window.location.href = "signin.html"
+                  window.location.href = "signup.html"
               }, 3000);
               
               Firstname.value = ""
