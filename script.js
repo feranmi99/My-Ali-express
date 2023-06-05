@@ -1,5 +1,6 @@
-    let mycart = []
-    // console.log(mycart.length);
+let mycart = []
+// console.log(mycart.length);
+let eachItems = {};
     let mybalance = 0;
     let storageData;
     if(localStorage.mybalance){
@@ -12,7 +13,6 @@
     if (localStorage.cart) {
         mycart = JSON.parse(localStorage.getItem("cart")) 
         console.log(mycart.length);
-        // lenght.textContent = mycart.length
     }
     const laoded = ()=>{
         let alluser = JSON.parse(localStorage.getItem("cart")) 
@@ -35,6 +35,8 @@
     };
 
     const addToCart = (e) =>{
+      eachItems = e;
+      console.log(eachItems);
         let images = e.image;
         let names = e.name;
         let prices = e.price
@@ -48,22 +50,28 @@
         showname.innerHTML = names;
         showprice.innerHTML = `₦${prices}`
 
-        mycart.push(myitem)
+        
+
+    }
+const addCartItems = () =>{
+    mycart.push(eachItems)
         localStorage.setItem("cart", JSON.stringify(mycart));
 
-        let initialBalance = e.price;
+        let initialBalance = eachItems.price;
         if(!localStorage.totalBalance){
             // console.log(e);
             localStorage.setItem("totalBalance", JSON.stringify(initialBalance))
+            JSON.parse(localStorage.getItem("totalBalance"));
         }else{
             initialBalance = JSON.parse(localStorage.getItem("totalBalance"))
-            initialBalance = initialBalance + e.price;
+            initialBalance = initialBalance + eachItems.price;
             console.log(initialBalance);
             localStorage.setItem("totalBalance", JSON.stringify(initialBalance))
+            JSON.parse(localStorage.getItem("totalBalance"));
         }
-        let localData = JSON.parse(localStorage.getItem("totalBalance"))
+        location.reload();
+}
 
-    }
     const cart = () => {
   let alluser = JSON.parse(localStorage.getItem("cart"));
   lenght.textContent = alluser.length;
