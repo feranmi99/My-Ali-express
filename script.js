@@ -69,7 +69,7 @@ const addCartItems = () =>{
             localStorage.setItem("totalBalance", JSON.stringify(initialBalance))
             JSON.parse(localStorage.getItem("totalBalance"));
         }
-        location.reload();
+        cart();
 }
 
     const cart = () => {

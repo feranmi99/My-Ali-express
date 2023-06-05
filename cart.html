@@ -14,20 +14,47 @@
 
 </head>
 <body onload="cart()">
-    <div class="p-1 bg-light">
-        <div class="container-lg justify-content-between d-flex">
-            <button class="btn btn-danger fw-bold" onclick="logout()">log-out</button>
-            <button class="btn btn-primary fw-bold" onclick="user()">Account</button>
-        </div>
-    </div>
     <nav class="navbar sticky-top" style="background-color: white;">
         <div class="container-lg d-flex px-2">
             <a class="d-sm-none d-md-block d-none d-sm-block col-2 " href="#"><img src="./Screenshot 2023-05-16 160437.jpg" alt="" class="img-fluid" width=""></a>
             <input class="form-control me-2 col" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn fw- d-none d-lg-block col-1" style="background-color: orange;color: white;font-size: larger;"  type="submit">Search</button>
+            <button class="btn fw- d-none d-lg-block col-1 fs-5" style="background-color: orange;color: white;" type="submit">Search</button>
             <div class="btn-group gap-2 ms-2 fs-5" role="group" aria-label="Default button group">
-                <button type="button" class="btn btn-warning fw-bold text-light fs-5" onclick="home()"><span class="d-none d-lg-inline">Home</span> 🏛</button>
-                <button type="button" class="btn btn-warning fw-bold text-light fs-5" onclick="cartt()"><span class="d-none d-lg-inline">Cart</span>🛒<sup id="lenght" class="bg-danger rounded-circle px-2 py-1">0</sup></button>
+                <button type="button" class="btn btn-warning fw-bold text-light fs-5" onclick="home()">🏛</button>
+                <div class="dropdown d-none d-lg-inline">
+                    <button class="btn btn-light dropdown-toggle fw-bold "type="button" data-bs-toggle="dropdown" aria-expanded="false" id="showhover">
+                        👳🏻‍♀️Account
+                    </button>
+                    <ul class="dropdown-menu">
+                        <div class="mx-2">
+                            <button class="btn btn-warning text-light fw-bold w-100"  onclick="user()">Account</button>
+                        </div>
+                        <hr>
+                    <li><a class="dropdown-item" href="#">👩‍⚕️ My Account</a></li>
+                    <li><a class="dropdown-item" href="#">🛺 Orders</a></li>
+                    <li><a class="dropdown-item" href="#">🤍 Save items</a></li>
+                    <div class="mx-2">
+                            <button class="btn btn-danger text-light fw-bold w-100" onclick="logout()">Log-out</button>
+                        </div>
+                    </ul>
+                </div>
+                <div class="dropdown d-none d-lg-inline">
+                    <button class="btn btn-light dropdown-toggle fw-bold " type="button" data-bs-toggle="dropdown" aria-expanded="false" id="showhover">
+                    ⑦ Help
+                    </button>
+                    <ul class="dropdown-menu px-2">
+                    <li><a class="dropdown-item" href="#">Help center</a></li>
+                    <li><a class="dropdown-item" href="#">Place & track order</a></li>
+                    <li><a class="dropdown-item" href="#">Order cancellation</a></li>
+                    <li><a class="dropdown-item" href="#">Returns & Refund</a></li>
+                    <li><a class="dropdown-item" href="#">Payment & Jumia account</a></li>
+                    <div class="mx-2">
+                            <button class="btn btn-warning text-light fw-bold w-100">Live Chat</button>
+                        </div>
+                    </ul>
+                </div>
+                <!-- <button type="button" class="btn btn-warning fw-bold text-light fs-5" onclick="home()">Help</button> -->
+                <button type="button" class="btn btn-warning fw-bold text-light " onclick="cartt()"><span class="d-none d-lg-inline">Cart</span>🛒<sup id="lenght" class="bg-danger rounded-circle px-2 py-1">0</sup></button>
             </div>  
         </div>
     </nav>
